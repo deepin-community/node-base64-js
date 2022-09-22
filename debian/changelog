@@ -1,0 +1,104 @@
+node-base64-js (1.5.1+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.4.1, no changes needed.
+  * Apply multi-arch hints.
+    + node-base64-js: Add Multi-Arch: foreign.
+
+  [ lintian-brush ]
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Use dh-sequence-nodejs
+  * New upstream version 1.5.1+dfsg
+  * Remove useless build dependency to node-tap and dpkg-dev
+  * Remove dependency to nodejs
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 23 Dec 2020 10:25:33 +0100
+
+node-base64-js (1.3.1+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.3.0
+  * Add upstream/metadata
+
+  [ Pirate Praveen ]
+  * New upstream version 1.3.1+dfsg
+  * Bump debhelper compat to 12
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+  * Switch to pkg-js-tools for build and uglifyjs.terser to minify
+  * Switch to pkg-js-tools for tests and create debian/clean
+  * Switch to pkg-js-tools auto install
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 27 Aug 2019 17:07:30 +0000
+
+node-base64-js (1.3.0+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * Increase timeout for cli
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 10 May 2018 21:46:54 +0200
+
+node-base64-js (1.3.0+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version, fix decode in case of corrupted input.
+  * Move to salsa
+  * Bump policy (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 07 May 2018 15:49:52 +0200
+
+node-base64-js (1.2.3+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+  * Bump compat
+  * Bump policy (no changes)
+  * Move to section javascript
+  * Use tap over tape for better testing
+  * Uglify it
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 19 Feb 2018 20:50:41 +0100
+
+node-base64-js (1.2.1+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+  * Bump policy no changes
+
+ -- Bastien Roucariès <rouca@debian.org>  Sat, 12 Aug 2017 22:21:38 +0200
+
+node-base64-js (1.2.0+dfsg-3) unstable; urgency=medium
+
+  * Team upload
+  * run testsuite.
+  * update autopkgtest to run testsuite.
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 09 Apr 2017 15:17:20 +0200
+
+node-base64-js (1.2.0+dfsg-2) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+  * Move to compat 10.
+  * Fix description
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 27 Mar 2017 23:22:10 +0200
+
+node-base64-js (1.2.0+dfsg-1) experimental; urgency=low
+
+  * Initial release (Closes: #853853)
+
+ -- Siddhesh Rane <kingsid911@gmail.com>  Wed, 01 Feb 2017 13:56:10 +0000
