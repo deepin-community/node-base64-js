@@ -3,5 +3,10 @@ opts=\
 repacksuffix=+dfsg,\
 repack,compression=xz,\
 dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-base64-js-$1.tar.gz/ \
- https://github.com/beatgammit/base64-js/tags .*/archive/v?([\d\.]+).tar.gz
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-base64-js-$1/ \
+ https://github.com/beatgammit/base64-js/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-base64-js,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-base64-js-$1/" \
+ https://registry.npmjs.org/@types/base64-js https://registry.npmjs.org/@types/base64-js/-/base64-js-([\d\.]+)@ARCHIVE_EXT@ group
