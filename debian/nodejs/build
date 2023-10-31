@@ -1,2 +1,2 @@
 browserify-lite ./index.js --standalone base64js --outfile base64.js
-uglifyjs.terser base64.js -o base64js.min.js
+terser base64.js -o base64js.min.js

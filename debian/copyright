@@ -2,8 +2,9 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: base64-js
 Upstream-Contact: https://github.com/beatgammit/base64-js/issues
 Source: https://github.com/beatgammit/base64-js
-Files-Excluded: base64js.min.js
+ https://registry.npmjs.org/@types/base64-js
 Comment: minified source
+Files-Excluded: base64js.min.js
 
 Files: *
 Copyright: T. Jameson Little <t.jameson.little@gmail.com>
@@ -12,6 +13,10 @@ License: Expat
 Files: debian/*
 Copyright: 2017 Siddhesh Rane <kingsid911@gmail.com>
  2018 Bastien Roucariès <rouca@debian.org>
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Expat
@@ -34,4 +39,3 @@ License: Expat
  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
-
